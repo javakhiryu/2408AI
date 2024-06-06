@@ -35,14 +35,14 @@ try:
         #     f.write(image)
         # image = cv.imread(f"live.png")
         image = cv.resize(img,(400,900))
-        cv.imshow("Starter",image)
-        cv.waitKey()
+        #cv.imshow("Starter",image)
+        #cv.waitKey()
         #image = image[328:690,28:370]     # change this accordinf to your screenresolution 
                                           # (This values are only for screen with resolution of 2340 * 1080 resolution)
         image = image[283:631,27:372] 
 
-        cv.imshow("Croped",image)
-        cv.waitKey()
+        #cv.imshow("Croped",image)
+        #cv.waitKey()
 
 
         # cv.imwrite("live.png",image)
