@@ -199,7 +199,7 @@ try:
             break
         else:
             myArray[pos[0]][pos[1]] = 2
-        time.sleep(2)
+        #time.sleep(2)
         # if reachedmax():
         #     printgrid()
         #     break
