@@ -57,9 +57,9 @@ try:
         print(move)
 
         if move['move'] == 'u':
-            device.shell(f'input swipe 500 2000 500 1000 100')
+            device.shell(f'input swipe 500 1000 500 600 100')
         if move['move'] == 'd':
-            device.shell(f'input swipe 500 1000 500 2000 100')
+            device.shell(f'input swipe 500 600 500 1000 100')
         if move['move'] == 'r':
             device.shell(f'input swipe 200 1000 700 1000 100')  
         if move['move'] == 'l':
