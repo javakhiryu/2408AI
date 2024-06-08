@@ -39,16 +39,16 @@ try:
         #cv.waitKey()
         #image = image[328:690,28:370]     # change this accordinf to your screenresolution 
                                           # (This values are only for screen with resolution of 2340 * 1080 resolution)
-        image = image[283:631,27:372] 
+        image = image[279:648,10:380] 
 
         #cv.imshow("Croped",image)
         #cv.waitKey()
 
 
-        # cv.imwrite("live.png",image)
-        # cv.imshow("image",image)
-        # cv.waitKey()
-        # break
+        #cv.imwrite("live.png",image)
+        #cv.imshow("image",image)
+        #cv.waitKey()
+        #break
         
 
         array = divimage.scanimage(image)
@@ -57,13 +57,13 @@ try:
         print(move)
 
         if move['move'] == 'u':
-            device.shell(f'input swipe 500 1000 500 600 100')
+            device.shell(f'input swipe 500 1000 500 600 25')
         if move['move'] == 'd':
-            device.shell(f'input swipe 500 600 500 1000 100')
+            device.shell(f'input swipe 500 600 500 1000 25')
         if move['move'] == 'r':
-            device.shell(f'input swipe 200 1000 700 1000 100')  
+            device.shell(f'input swipe 200 1000 700 1000 25')  
         if move['move'] == 'l':
-            device.shell(f'input swipe 700 1000 200 1000 100') 
+            device.shell(f'input swipe 700 1000 200 1000 25') 
 
         if moves == 30:
             runs+=10

@@ -5,11 +5,11 @@ import matplotlib.pyplot as plt
 
 # Load image, grayscale, and adaptive threshold
 image = cv2.imread('live.png')
-# image = cv2.resize(image,(400,900))
+image = cv2.resize(image,(370,370))
 image = image
 large_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 
-small_image = cv2.imread('data/2408.png')
+small_image = cv2.imread('data/2048.png')
 small_image= cv2.cvtColor(small_image, cv2.COLOR_BGR2GRAY)
 w, h = small_image.shape[::-1]
 
@@ -23,9 +23,9 @@ for pt in zip(*loc[::-1]):
 print(loc)
 
 cv2.imshow("image", large_image)
-# plt.imshow(image)
+#plt.imshow(image)
 
-# plt.show()
+#plt.show()
 
 cv2.waitKey()
 
